@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+  <link rel="shorcut icon" href="{{ url_for('static', filename='favico.ico')}}" type="image/x-icon" />
+  <meta property="og:title" content="Sweeter - the sweetest site" />
+  <meta property="og:description" content="mini project for Web Plus" />
+  <meta property="og:image" content="{{ url_for('static', filename='ogimage.jpg') }}" />
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sweeter | The Sweetest</title>
@@ -27,7 +32,7 @@
   <nav class="navbar is-fixed-top is-white" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <img src="{{ url_for('static', filename='logo.jpg') }}" />
+        <img src="{{ url_for('static', filename='favico.ico') }}" />
         <strong class="is-sparta logo-text">SWEETER</strong>
       </a>
     </div>
